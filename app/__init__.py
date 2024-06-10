@@ -11,7 +11,7 @@ def create_app():
     # Register the Flask application with Eureka
     eureka_client.init(
         eureka_server="http://localhost:9102/",
-        app_name="python-predict-service",
+        app_name="predict-count-by-time-service",
         instance_port=5000,
         instance_ip="127.0.0.1"
     )
